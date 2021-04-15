@@ -472,6 +472,54 @@
     </div>
   </section>
 
+  <!-- Testimonial Section Here -->
+  <section id="testimonial-section">
+    <div class="container">
+      <h6 class="h6 color-primary m-0">Testimonial</h6>
+      <h1 class="h1 h1-responsive mb-3">What They Are Saying</h1>
+      <p class="mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, qui fugit. Sunt aspernatur
+        vitae
+        molestias?s<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, qui.</p>
+      <div id="testimonial-slider">
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="testimonial-list">
+                <div class="col-10 m-auto">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="image">
+                        <img src="img/avatar.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col-md-6 text-left ml-auto d-flex flex-column justify-content-center">
+                      <div class="icon"><i class="fas fa-quote-right fa-10x"></i></div>
+                      <p class="mb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, veniam.</p>
+                      <h4 class="h5 mb-0">Claire Tong</h4>
+                      <p class="muted">UI/UX Designer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Testimonial Section Here -->
+    <section id="contact-section">
+
+    </section>
+
 
 
 </body>
@@ -491,13 +539,32 @@
   $('#year').text(new Date().getFullYear());
 </script>
 <script>
-  const swiper = new Swiper('.swiper-container', {
+  const swiper1 = new Swiper('#property-slider .swiper-container', {
     // Optional parameters
     // direction: 'vertical',
     loop: true,
     slidesPerView: 4,
     centeredSlides: true,
     spaceBetween: 30,
+
+    // If we need pagination
+    // pagination: {
+    //   el: '.swiper-pagination',
+    // },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  });
+  const swiper2 = new Swiper('#testimonial-slider .swiper-container', {
+    // Optional parameters
+    // direction: 'vertical',
+    loop: true,
+    slidesPerView: 1,
+    centeredSlides: true,
 
     // If we need pagination
     // pagination: {
