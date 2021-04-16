@@ -425,6 +425,10 @@ header nav.navbar .nav-item {
 }
 
 /* Contact Section Style */
+#contact-section{ 
+  margin-bottom: 10rem !important;
+  margin-top: 10rem !important;
+}
 #contact-section .search-area {
   border-radius: 80px;
   padding: 15px 50px;
